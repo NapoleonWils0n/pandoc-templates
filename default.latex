@@ -171,11 +171,13 @@ $include-before$
 
 $endfor$
 $if(toc)$
+\newpage
 {
 \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
 \setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
 }
+\newpage
 $endif$
 $if(lot)$
 \listoftables
